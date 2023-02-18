@@ -1,0 +1,17 @@
+.portfolio {
+  margin-bottom: 60px;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    grid-template-rows: 280px 280px;
+    justify-content: space-between;
+    row-gap: 5px;
+  }
+  &__block {
+    transition: 0.5s all;
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}
